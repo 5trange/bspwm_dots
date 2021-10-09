@@ -1,7 +1,7 @@
 # bspwm-desktop
 bspwm dot files from my desktop setup.
 
-## nvidia-llvmpipe-fix
+## nvidia-llvmpipe-issue
 The recent updates switches the OpenGL renderer to llvmpipe, and causes many issues with picom.<br>
 [Temporary fix for this is here.](https://bbs.archlinux.org/viewtopic.php?id=258201)
 
@@ -12,6 +12,7 @@ Section "Files"
     ModulePath "/usr/lib/xorg/modules"
 EndSection
 ```
+This is not a proper fix and may cause some problems later.
 
 ## Steam font fix
 Steam requires some fonts to work properly.<br>
