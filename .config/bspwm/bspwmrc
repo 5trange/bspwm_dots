@@ -2,22 +2,21 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# ##############################################################################
-# #                                AUTOSTART APPS                              #
-# ##############################################################################
-bspc monitor ^1 -s ^2
-xrandr --output DVI-D-0 --primary --output DVI-I-0 --left-of DVI-D-0 &
-picom --experimental-backends &
-lxqt-policykit-agent &
-dunst --config $HOME/.config/dunst/dunstrc &
+###############################################################################
+##                                AUTOSTART APPS                              #
+###############################################################################
+
+bspc monitor ^1 -s ^2 &
+picom --experimental-backends --no-fading-openclose &
 nitrogen --restore &
 sh $HOME/.config/polybar/launch.sh &
+dunst --config $HOME/.config/dunst/dunstrc &
+lxqt-policykit-agent &
 nm-applet &
 
-
-# ##############################################################################
-# #                            GENERAL CONFIGURATION                           #
-# ##############################################################################
+###############################################################################
+##                            GENERAL CONFIGURATION                           #
+###############################################################################
 
 bspc monitor DVI-D-0 -n 0 -d I II III IV V VI 
 bspc monitor DVI-I-0 -n 1 -d VII VIII
@@ -36,6 +35,4 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-# ##############################################################################
-# #                                 WINDOW RULES                               #
-# ##############################################################################
+
