@@ -1,4 +1,4 @@
-# bspwm-desktop
+# BSPWM Arch Linux Setup
 An arctic, north-bluish color palette setup for BSPWM.
 
 ## nvidia-driver-problem-llvmpipe
