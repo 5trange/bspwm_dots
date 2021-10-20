@@ -17,4 +17,4 @@ After that, reboot.
 ## Steam font fix
 Steam requires some fonts to work properly.
 Either install ```ttf-liberation``` or
-[follow this thread](https://steamcommunity.com/app/221410/discussions/0/864961175388383181/)
+[follow this thread.](https://steamcommunity.com/app/221410/discussions/0/864961175388383181/)
