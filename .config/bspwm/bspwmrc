@@ -11,7 +11,7 @@ picom --experimental-backends --no-fading-openclose &
 nitrogen --restore &
 sh $HOME/.config/polybar/launch.sh &
 dunst --config $HOME/.config/dunst/dunstrc &
-lxpolkit &
+polkit-dumb-agent &
 nm-applet &
 
 ###############################################################################
@@ -21,7 +21,7 @@ nm-applet &
 bspc monitor DVI-D-0 -n 0 -d I II III IV V VI 
 bspc monitor DVI-I-0 -n 1 -d VII VIII
 
-bspc config border_width         3
+bspc config border_width         1
 bspc config window_gap           3
 
 bspc config top_padding          0
@@ -31,8 +31,6 @@ bspc config normal_border_color  "#5e81ac"
 bspc config active_border_color  "#81a1c1"
 bspc config focused_border_color "#b48ead"
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.55
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
-
