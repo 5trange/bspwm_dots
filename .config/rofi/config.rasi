@@ -1,133 +1,77 @@
-/**
- * Nordic rofi theme
- * Nord Color palette imported from https://www.nordtheme.com/
- */
-
 configuration {
-
-	font: "JetBrains Mono 10";
-	width: 30;
-	line-margin: 10;
-	lines: 6;
-	columns: 2;
-
-    display-ssh:    "";
-    display-run:    "";
-    display-drun:   "";
-    display-window: "";
-    display-combi:  "";
-    show-icons:     false;
+	modi:								"drun";
+	font:								"Jet Brains Mono 9";
+	display-drun: 			"";
+	sidebar-mode: 			false;
 }
 
+@theme "/dev/null"
+
 * {
-	nord0: #2e3440;
-	nord1: #3b4252;
-	nord2: #434c5e;
-	nord3: #4c566a;
+	bg:						#4C566A;
+	fg:						#81A1C1;
+	button:				#D8DEE9;
 
-	nord4: #d8dee9;
-	nord5: #e5e9f0;
-	nord6: #eceff4;
-
-	nord7: #8fbcbb;
-	nord8: #88c0d0;
-	nord9: #81a1c1;
-	nord10: #5e81ac;
-	nord11: #bf616a;
-
-	nord12: #d08770;
-	nord13: #ebcb8b;
-	nord14: #a3be8c;
-	nord15: #b48ead;
-
-    foreground: @nord9;
-    backlight: #ccffeedd;
-    background-color: transparent;
-    
-    highlight: underline bold #8fbcbb;
-
-    transparent: rgba(46,52,64,0);
+	background-color:		@bg;
+	text-color:					@fg;
 }
 
 window {
-    location: center;
-    anchor:   center;
-    transparency: "screenshot";
-    padding: 10px;
-    border:  0px;
-
-    background-color: @transparent;
-    spacing: 0;
-    children:  [mainbox];
-    orientation: horizontal;
+	transparency:     "real";
+	border-radius:    7px;
+	width:			    	40%;
+	y-offset:          10px;
+	location: 				center;
 }
 
-mainbox {
-    spacing: 0;
-    children: [ inputbar, message, listview ];
-}
+prompt { enabled: false; }
 
-message {
-    color: @nord0;
-    padding: 5;
-    border-color: @foreground;
-    background-color: @nord7;
+entry {
+	placeholder:										"Search";
+	expand:                         true;
+	padding:                        5px 1% 5px 1%;
+	background-color:               @button;
+  placeholder-color:              @fg;
 }
 
 inputbar {
-    color: @nord6;
-    padding: 11px;
-    background-color: #3b4252;
-
-    border: 1px;
-    border-color: @nord10;
-}
-
-entry, prompt, case-indicator {
-    text-font: inherit;
-    text-color:inherit;
-}
-
-prompt {
-    margin: 0px 0.3em 0em 0em ;
+	children: 											[ prompt, entry ];
+	background-color:               @button;
+	text-color:                     @fg;
+	expand:                         false;
+	border-radius:                  6px;
+	padding:                        8px;
 }
 
 listview {
-    padding: 8px;
-    border-color: @nord10;
-    border: 0px 1px 1px 1px;
-    background-color: rgba(46,52,64,0.9);
-    dynamic: false;
+	columns:                        1;
+	lines:	                        8;
+	cycle:                          false;
+	dynamic:                        true;
+	layout:                         vertical;
+}
+
+mainbox {
+	children:                       [ inputbar, listview ];
+	spacing:                       	2%;
+	padding:                        2% 1% 2% 1%;
 }
 
 element {
-    padding: 2px;
-    vertical-align: 0.5;
-    background-color: transparent;
-    color: @foreground;
-    text-color: rgb(216, 222, 233);
+	orientation:                    vertical;
+	border-radius:                  0%;
+	padding:                        1.5% 0% 1.5% 1.5%;
 }
 
-element selected.normal {
-	background-color: @nord7;
-	text-color: #a3be8c;
+element-text {
+	expand:                         true;
+	vertical-align:                 0.5;
+	background-color:               inherit;
+  text-color:                     inherit;
 }
 
-element-text, element-icon {
-    background-color: #4c566a;
-    text-color:       inherit;
-}
-
-button {
-    padding: 6px;
-    color: @foreground;
-    horizontal-align: 0.5;
-
-    border: 2px 0px 2px 2px;
-    border-color: @foreground;
-}
-
-button selected normal {
-    border: 2px 0px 2px 2px;
-    border-color: @foreground;
+element selected {
+	background-color:               @fg;
+	text-color:                     @bg;
+	border-radius:                  6px;
 }
