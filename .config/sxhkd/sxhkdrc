@@ -27,7 +27,7 @@ super + shift + Print
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 super + d
@@ -46,7 +46,7 @@ super + e
 	pcmanfm
 # Web Browser
 super + w
-	firefox
+	brave
 
 # quit/restart bspwm
 super + alt + {q,r}

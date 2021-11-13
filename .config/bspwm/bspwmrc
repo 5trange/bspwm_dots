@@ -8,6 +8,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor ^1 -s ^2 &
 picom --experimental-backends --no-fading-openclose &
+wmname LG3D &
 nitrogen --restore &
 sh $HOME/.config/polybar/launch.sh &
 dunst --config $HOME/.config/dunst/dunstrc &
@@ -34,3 +35,9 @@ bspc config focused_border_color "#b48ead"
 bspc config split_ratio          0.55
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
+###############################################################################
+##                            WEIRD JAVA WINDOW FIX                           #
+###############################################################################
+
+bspc rule -a android-studio state=floating border=off follow=on
