@@ -6,14 +6,14 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 ##                                AUTOSTART APPS                              #
 ###############################################################################
 
+wmname LG3D &
 bspc monitor ^1 -s ^2 &
 picom --experimental-backends --no-fading-openclose &
-wmname LG3D &
-nitrogen --restore &
 sh $HOME/.config/polybar/launch.sh &
 dunst --config $HOME/.config/dunst/dunstrc &
-polkit-dumb-agent &
+nitrogen --restore &
 nm-applet &
+lxpolkit &
 
 ###############################################################################
 ##                            GENERAL CONFIGURATION                           #
