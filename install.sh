@@ -21,7 +21,7 @@ install_base_pkgs() {
 
 install_aur_pkgs() {
 	echo '*** Installing AUR packages... ***'
-	yay -S --noconfirm polybar ly
+	yay -S polybar ly
 	echo '*** Cleaning up... ***'
 	yay -Yc --noconfirm
 }

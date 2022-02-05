@@ -24,7 +24,7 @@ gvfs-nfs
 gvfs-smb
 polkit
 lxsession-gtk3
-lxappearance-gtk
+lxappearance-gtk3
 lxterminal
 bspwm
 sxhkd
