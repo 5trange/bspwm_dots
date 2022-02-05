@@ -21,14 +21,14 @@ install_base_pkgs() {
 
 install_aur_pkgs() {
 	echo '*** Installing AUR packages... ***'
-	yay -S polybar ly
+	yay -S polybar
 	echo '*** Cleaning up... ***'
 	yay -Yc --noconfirm
 }
 
-setup_ly_service() {
-	echo '*** Enabling ly service... ***'
-	sudo systemctl enable ly.service
+setup_services() {
+	echo '*** Enabling services... ***'
+	sudo systemctl enable lightdm.service
 }
 
 install_config() {
@@ -41,7 +41,7 @@ setup_yay
 refresh_repos
 install_base_pkgs
 install_aur_pkgs
-setup_ly_service
+setup_services
 install_config
 echo '*** Install complete! ***'
 echo '*** You might want to install display drivers though. ***'

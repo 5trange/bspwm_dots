@@ -37,3 +37,6 @@ picom
 network-manager-applet
 arc-gtk-theme
 papirus-icon-theme
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
