@@ -12,5 +12,14 @@ refresh_repos() {
 	pacman -Sy
 }
 
+setup_yay() {
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si
+	cd ..
+	rm -rf yay
+}
+
+setup_yay
 refresh_repos
 install_base
