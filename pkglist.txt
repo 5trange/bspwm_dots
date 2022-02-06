@@ -13,6 +13,7 @@ ttf-ubuntu-font-family
 ttf-liberation
 ttf-font-awesome
 ttf-jetbrains-mono
+ttc-iosevka
 pcmanfm-gtk3
 file-roller
 gvfs
@@ -25,7 +26,7 @@ gvfs-smb
 polkit
 lxsession-gtk3
 lxappearance-gtk3
-lxterminal
+kitty
 bspwm
 sxhkd
 rofi
