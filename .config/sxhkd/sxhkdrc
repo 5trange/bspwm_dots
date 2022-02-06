@@ -27,7 +27,7 @@ super + shift + Print
 
 # terminal emulator
 super + Return
-	lxterminal
+	kitty
 
 # program launcher
 super + d
