@@ -23,6 +23,8 @@ gvfs-goa
 gvfs-gphoto2
 gvfs-nfs
 gvfs-smb
+libsecret
+gnome-keyring
 polkit
 lxsession-gtk3
 lxappearance-gtk3
