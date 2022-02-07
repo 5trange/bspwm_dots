@@ -27,6 +27,7 @@ polkit
 lxsession-gtk3
 lxappearance-gtk3
 kitty
+zsh
 bspwm
 sxhkd
 rofi
