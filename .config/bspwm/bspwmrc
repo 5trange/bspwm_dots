@@ -1,11 +1,17 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null |
+pgrep -x picom > /dev/null
+pgrep -x polybar > /dev/null
+pgrep -x dunst > /dev/null
+pgrep -x nm-applet > /dev/null
+pgrep -x lxpolkit > /dev/null
 
 ###############################################################################
 ##                                AUTOSTART APPS                              #
-###############################################################################
+###############################################################################\
 
+sxhkd &
 wmname LG3D &
 bspc monitor ^1 -s ^2 &
 picom --experimental-backends --no-fading-openclose &
