@@ -33,8 +33,3 @@ Then, edit the ```/etc/mkinitcpio.conf``` file and add ```nvidia nvidia_modeset 
 Then, manually regenerate the initramdisk by running ```mkinitcpio -p linux-zen``` (Assuming we are using ```linux-zen```). AFAIK this step needs to be repeated after every driver update.
 
 After that, reboot.
-
-## Steam font fix
-Steam requires some fonts to work properly.
-Either install ```ttf-liberation``` or
-[follow this thread.](https://steamcommunity.com/app/221410/discussions/0/864961175388383181/)
