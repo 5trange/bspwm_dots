@@ -1,6 +1,26 @@
 # BSPWM Arch Linux Setup
 An arctic, north-bluish color palette setup for BSPWM.
 
+## Screenshots
+![screen1](https://user-images.githubusercontent.com/64513428/153698659-8d72c692-dfe9-4d41-a96a-d45c809d1962.png)
+
+## Installation
+1. Install dependencies using Pacman
+```
+sudo pacman -Sy --needed base-devel
+```
+
+2. Clone the repo
+```
+git clone https://github.com/5trange/bspwm-dots
+cd bspwm-dots
+```
+
+3. Execute the install script
+```
+./install.sh
+```
+
 ## nvidia-driver-problem-llvmpipe
 For some reason, The NVIDIA proprietary drivers choose ```llvmpipe``` to render OpenGL. To fix this:
 
