@@ -2,7 +2,7 @@
 An arctic, north-bluish color palette setup for BSPWM.
 
 ## Screenshots
-![screen1](https://user-images.githubusercontent.com/64513428/153698659-8d72c692-dfe9-4d41-a96a-d45c809d1962.png)
+![image](https://user-images.githubusercontent.com/64513428/153715832-86d003e8-1e87-4f4b-8c2f-fdf63d036d39.png)
 
 ## Installation
 1. Install dependencies using Pacman
