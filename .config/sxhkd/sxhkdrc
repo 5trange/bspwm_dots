@@ -46,7 +46,7 @@ super + e
 	pcmanfm
 # Web Browser
 super + w
-	brave
+	firefox
 
 # quit/restart bspwm
 super + alt + {q,r}
