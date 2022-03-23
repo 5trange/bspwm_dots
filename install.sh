@@ -35,6 +35,9 @@ install_config() {
 	echo '*** Installing config... ***'
 	cp -r .config/ ~
 	cp -r .local/ ~
+	cp -r .fonts/ ~
+	echo '*** Refreshing font cache... ***'
+	fc-cache -f -v
 }
 
 setup_yay
