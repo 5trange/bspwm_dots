@@ -15,7 +15,6 @@ ttf-font-awesome
 ttf-jetbrains-mono
 ttc-iosevka
 pcmanfm-gtk3
-file-roller
 gvfs
 gvfs-mtp
 gvfs-afc
@@ -25,6 +24,9 @@ gvfs-nfs
 gvfs-smb
 libsecret
 gnome-keyring
+file-roller
+gnome-boxes
+gnome-disk-utility
 polkit
 lxsession-gtk3
 lxappearance-gtk3
