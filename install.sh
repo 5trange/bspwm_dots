@@ -36,6 +36,8 @@ install_config() {
 	cp -r .config/ ~
 	cp -r .local/ ~
 	cp -r .fonts/ ~
+	echo '*** Installing XORG config... ***'
+	sudo cp xorg_configs/* /etc/X11/xorg.conf.d/
 	echo '*** Refreshing font cache... ***'
 	fc-cache -f -v
 	echo '*** Copying wallpapers... ***'
