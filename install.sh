@@ -10,8 +10,14 @@ setup_yay() {
 }
 
 refresh_repos() {
+	echo '*** Enabling Mutillib... ***'
+	mline=$(grep -n "\\[multilib\\]" /etc/pacman.conf | cut -d: -f1)
+	rline=$(($mline + 1))
+	sudo sed -i ''$mline's|#\[multilib\]|\[multilib\]|g' /etc/pacman.conf
+	sudo sed -i ''$rline's|#Include = /etc/pacman.d/mirrorlist|Include = /etc/pacman.d/mirrorlist|g' /etc/pacman.conf
+
 	echo '*** Refreshing repositories... ***'
-	sudo pacman -Sy
+	sudo pacman -Syu
 }
 
 install_base_pkgs() {
@@ -36,12 +42,16 @@ install_config() {
 	cp -r .config/ ~
 	cp -r .local/ ~
 	cp -r .fonts/ ~
+
 	echo '*** Installing XORG config... ***'
 	sudo cp xorg_configs/* /etc/X11/xorg.conf.d/
+
 	echo '*** Refreshing font cache... ***'
 	fc-cache -f -v
+
 	echo '*** Copying wallpapers... ***'
 	cp -r Pictures/ ~
+
 	echo '*** Setting up ZSH... ***'
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
 }
