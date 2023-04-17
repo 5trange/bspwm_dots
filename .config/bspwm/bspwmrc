@@ -13,8 +13,7 @@ pgrep -x lxpolkit > /dev/null
 
 sxhkd &
 wmname LG3D &
-bspc monitor ^1 -s ^2 &
-picom --experimental-backends --no-fading-openclose &
+picom --no-fading-openclose &
 sh $HOME/.config/polybar/launch.sh &
 dunst --config $HOME/.config/dunst/dunstrc &
 nitrogen --restore &
@@ -25,9 +24,7 @@ lxpolkit &
 ##                            GENERAL CONFIGURATION                           #
 ###############################################################################
 
-bspc monitor DVI-D-0 -n 0 -d I II III IV V VI 
-bspc monitor DVI-I-0 -n 1 -d VII VIII
-
+bspc monitor primary -d I II III IV V VI VII VIII
 bspc config border_width         1
 bspc config window_gap           3
 
