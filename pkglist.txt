@@ -46,3 +46,4 @@ papirus-icon-theme
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
+mpv
