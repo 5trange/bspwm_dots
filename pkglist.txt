@@ -47,3 +47,6 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 mpv
+p7zip
+lf
+galculator
