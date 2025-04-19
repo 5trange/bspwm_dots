@@ -11,6 +11,7 @@ pgrep -x lxpolkit > /dev/null
 ##                                AUTOSTART APPS                              #
 ###############################################################################
 
+xrandr --rate 165 &
 sxhkd &
 wmname LG3D &
 picom --no-fading-openclose &
