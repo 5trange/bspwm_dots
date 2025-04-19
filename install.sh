@@ -27,7 +27,7 @@ install_base_pkgs() {
 
 install_aur_pkgs() {
 	echo '*** Installing AUR packages... ***'
-	yay -S polybar
+	yay -S polybar arc-gtk-theme librewolf-bin
 	echo '*** Cleaning up... ***'
 	yay -Yc --noconfirm
 }
@@ -63,4 +63,3 @@ install_aur_pkgs
 setup_services
 install_config
 echo '*** Install complete! ***'
-echo '*** You might want to install display drivers though. ***'
