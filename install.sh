@@ -51,9 +51,6 @@ install_config() {
 
 	echo '*** Copying wallpapers... ***'
 	cp -r Pictures/ ~
-
-	echo '*** Setting up ZSH... ***'
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
 }
 
 setup_yay
