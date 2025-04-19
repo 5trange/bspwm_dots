@@ -30,7 +30,7 @@ gnome-disk-utility
 polkit
 lxsession-gtk3
 lxappearance-gtk3
-kitty
+alacritty
 zsh
 bspwm
 sxhkd
