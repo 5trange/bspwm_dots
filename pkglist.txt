@@ -31,7 +31,6 @@ polkit
 lxsession-gtk3
 lxappearance-gtk3
 alacritty
-zsh
 bspwm
 sxhkd
 rofi
@@ -47,5 +46,4 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 mpv
 p7zip
-lf
 galculator
