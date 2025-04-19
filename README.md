@@ -1,5 +1,5 @@
 # BSPWM Arch Linux Setup
-An arctic, north-bluish color palette setup for BSPWM.
+A somewhat reproducable arctic, north-bluish color palette setup for BSPWM.
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/64513428/153715832-86d003e8-1e87-4f4b-8c2f-fdf63d036d39.png)
